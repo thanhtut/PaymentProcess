@@ -1,9 +1,18 @@
-<form class="form-horizontal">
+<form class="form-horizontal" method="post" action="payment" >
 <fieldset>
 
 <!-- Form Name -->
-<legend>Form Name</legend>
+<legend>Payment Form</legend>
 
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Payment Details</h3>
+  </div>
+  <div class="panel-body">
+      <p>Customer Name: {{custname}}</p>
+      <p>Amount: {{amount}} {{currency}}</p>
+  </div>
+</div>
 <!-- Text input-->
 <div class="control-group">
   <label class="control-label" for="holdername">Credit Card Holder Name</label>

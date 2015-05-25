@@ -1,6 +1,6 @@
 
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="order">
     <fieldset>
 
     <!-- Form Name -->
@@ -8,9 +8,9 @@
 
     <!-- Text input-->
     <div class="control-group">
-      <label class="control-label" for="customername">Customer Name</label>
+      <label class="control-label" for="custname">Customer Name</label>
       <div class="controls">
-        <input id="customername" name="customername" placeholder="Full Name" class="input-medium" required="" type="text">
+        <input id="custname" name="custname" placeholder="Full Name" class="input-medium" required="" type="text">
 
       </div>
     </div>
@@ -41,7 +41,7 @@
 
     <!-- Button -->
     <div class="control-group">
-      <!--label class="control-label" for="confirm">Confirm</label-->
+      <label class="control-label" for="confirm"></label>
       <div class="controls">
         <button id="confirm" name="confirm" class="btn btn-primary">Confirm</button>
       </div>
