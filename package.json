@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/thanhtut/Nodejs-Round1#readme",
   "dependencies": {
-    "hapi": "^8.5.1"
+    "braintree": "^1.24.0",
+    "hapi": "^8.5.1",
+    "joi": "^6.4.2",
+    "paypal-rest-sdk": "^1.5.3"
   }
 }
