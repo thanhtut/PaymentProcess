@@ -4,7 +4,7 @@ var Joi = require('joi'),
   Db = require('../config/db');
 
 payment.orderGetHandler = function(request, reply) {
-  reply.view('index', {
+  reply.view('order', {
     title: 'Order Form'
   })
 };
