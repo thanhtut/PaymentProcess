@@ -8,17 +8,23 @@
   <div class="panel-heading">
     <h3 class="panel-title">Payment Details</h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body" id="orderdata">
       <p>Customer Name: {{custname}}</p>
       <p>Amount: {{amount}} {{currency}}</p>
   </div>
 </div>
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="holdername">Credit Card Holder Name</label>
+  <label class="control-label" for="holdername_first">Credit Card Holder Name</label>
   <div class="controls">
-    <input id="holdername" name="holdername" placeholder="Holder Name" class="input-medium" required="" type="text">
+    <input id="holdername_first" name="holdername_first" placeholder="First Name" class="input-medium" required="" type="text">
+  </div>
+</div>
 
+<div class="control-group">
+  <label class="control-label" for="holdername_last">Credit Card Holder Name</label>
+  <div class="controls">
+    <input id="holdername_last" name="holdername_last" placeholder="Last Name" class="input-medium" required="" type="text">
   </div>
 </div>
 
@@ -26,16 +32,45 @@
 <div class="control-group">
   <label class="control-label" for="cardnumber">Credit Card Number</label>
   <div class="controls">
-    <input id="cardnumber" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX" class="input-medium" required="" type="text">
+    <input id="cardnumber" name="cardnumber" placeholder="XXXXXXXXXXXXXXXX" class="input-medium" required="" type="text">
     <p class="help-block">help</p>
   </div>
 </div>
 
 <!-- Text input-->
 <div class="control-group">
-  <label class="control-label" for="cardexpiration">Credit Card Expiration</label>
+  <label class="control-label" for="cardtype">Card Type</label>
+    <div class="controls">
+      <select id="cardtype" name="cardtype" class="input-medium">
+        <option value="americanexpress">American Express</option>
+        <option value="discover">Discover</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="visa">Visa</option>
+      </select>
+    </div>
+</div>
+
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="cardexpiration_month">Credit Card Expiration</label>
   <div class="controls">
-    <input id="cardexpiration" name="cardexpiration" placeholder="XX/XX" class="input-medium" required="" type="text">
+    <select id="cardexpiration_month" name="cardexpiration_month" class="input-medium">
+      <option value="01">01</option> <option value="02">02</option>
+      <option value="03">03</option> <option value="04">04</option>
+      <option value="05">05</option> <option value="06">06</option>
+      <option value="07">07</option> <option value="08">08</option>
+      <option value="09">09</option> <option value="10">10</option>
+      <option value="11">11</option> <option value="12">12</option>
+    </select>
+
+    <select id="cardexpiration_year" name="cardexpiration_year" class="input-medium">
+      <option value="2015">2015</option> <option value="2016">2016</option>
+      <option value="2017">2017</option> <option value="2018">2018</option>
+      <option value="2019">2019</option> <option value="2020">2020</option>
+      <option value="2021">2021</option>
+    </select>
+
     <p class="help-block">help</p>
   </div>
 </div>

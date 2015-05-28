@@ -2,24 +2,28 @@
   "name": "payment_process",
   "version": "1.0.0",
   "description": "A simple payment processor for PayPal and Brain tree. The purpose is for HotelQuickly first test. ",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab",
+    "test-cov-html": "lab -r html -o coverage.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thanhtut/Nodejs-Round1.git"
+    "url": "git+https://github.com/thanhtut/PaymentProcess"
   },
   "author": "Than Htut Soe",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/thanhtut/Nodejs-Round1/issues"
+    "url": "https://github.com/thanhtut/PaymentProcess/issues"
   },
-  "homepage": "https://github.com/thanhtut/Nodejs-Round1#readme",
+  "homepage": "https://github.com/thanhtut/PaymentProcess#readme",
   "dependencies": {
     "braintree": "^1.24.0",
+    "cheerio": "^0.19.0",
+    "code": "^1.4.0",
     "hapi": "^8.5.1",
     "joi": "^6.4.2",
+    "lab": "^5.9.0",
     "mongoose": "^4.0.3",
     "paypal-rest-sdk": "^1.5.3"
   }

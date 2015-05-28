@@ -1,1 +1,15 @@
-{{message}}
+{{#if error}}
+<div id="error">We are sorry. An error occured during the payment process. Please email us for assistance.{{error}}</div>
+{{else}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Payment successfully made. Here are your payment details.</h3>
+  </div>
+  <div class="panel-body" id="payment-data">
+      <p>Payment Processor: {{payment_gateway}}</p>
+      <p>Amount: {{amount}} {{currency}}</p>
+      <p>Payment ID: {{payment_id}}</p>
+      <p>Payment Date: {{payment_date}}</p>
+  </div>
+</div>
+{{/if}}
